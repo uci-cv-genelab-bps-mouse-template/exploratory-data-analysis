@@ -3,14 +3,14 @@ BPSMouseDataset class."""
 
 # Add additional necessary imports
 
-from src.data_utils import save_tiffs_local_from_s3
+from eda.data_utils import save_tiffs_local_from_s3
 import boto3
 from botocore import UNSIGNED
 from botocore.config import Config
 
-from src.dataset.bps_dataset import BPSMouseDataset
+from eda.dataset.bps_dataset import BPSMouseDataset
 
-from src.dataset.augmentation import (
+from eda.dataset.augmentation import (
     NormalizeBPS,
     ResizeBPS,
     ToTensor

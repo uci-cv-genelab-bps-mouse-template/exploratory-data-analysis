@@ -1,14 +1,14 @@
 # Import additional necessary packages
 
-from src.dataset.bps_dataset import BPSMouseDataset 
-from src.dataset.augmentation import(
+from eda.dataset.bps_dataset import BPSMouseDataset 
+from eda.dataset.augmentation import(
     NormalizeBPS,
     ResizeBPS,
     ToTensor
 )
-from src.dataset.bps_datamodule import BPSDataModule
+from eda.dataset.bps_datamodule import BPSDataModule
 
-from src.vis_utils import(
+from eda.vis_utils import(
     plot_gallery_from_1D,
     plot_2D_scatter_plot,
 )
